@@ -4,4 +4,9 @@
 touch .hushlogin
 sudo timedatectl set-timezone America/New_York && date
 sudo apt update
-sudo apt full-upgrade -y
+sudo apt -y install wget
+sudo apt -y full-upgrade
+sudo apt update
+wget -O pihole-install.sh https://install.pi-hole.net
+wget https://raw.githubusercontent.com/ArthurScottDC/openvpn-install/master/openvpn-install.sh
+sudo bash pihole-install.sh

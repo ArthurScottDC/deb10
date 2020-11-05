@@ -8,4 +8,4 @@ sudo apt -y install wget
 sudo apt -y full-upgrade
 wget -O pihole-install.sh https://raw.githubusercontent.com/pi-hole/pi-hole/master/automated%20install/basic-install.sh
 wget https://raw.githubusercontent.com/ArthurScottDC/openvpn-install/master/openvpn-install.sh
-sudo reboot
+sudo service openvpn start && sudo service openvpn status && sudo reboot

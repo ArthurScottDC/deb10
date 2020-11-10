@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt -y install \
+sudo apt install -y \
     apt-transport-https \
     ca-certificates \
     curl \
